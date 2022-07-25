@@ -1,2 +1,2 @@
 # pythonautoclicker
-a simple auto clicker I tried to make pretty
+A simple auto clicker I tried to make look pretty
