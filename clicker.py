@@ -10,6 +10,7 @@ from colorama import init, Fore
 import cursor
 
 os.system('mode con: cols=75 lines=25')
+os.system('title Python Clicker')
 
 colorama.init(autoreset = True)
 
