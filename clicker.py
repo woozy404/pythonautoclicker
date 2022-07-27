@@ -12,7 +12,6 @@ import sys
 import colorama
 from colorama import init, Fore
 import cursor
-import pyautogui
 
 os.system('mode con: cols=75 lines=25')
 os.system('title Python Clicker')
@@ -53,24 +52,18 @@ total_time = 0
 random_time = 0
 counter = 0
 
-
 print(Fore.GREEN + '''
             ------------------------------------------------
-             To use the clicker press F on your keyboard
-             To use the humanized cps use H on your keyboard
+              To use the clicker press F on your keyboard
+              To use Humanized CPS use H on your keyboard
             ------------------------------------------------
 ''')
 
-def clicker():
-    
-
+def clicker():   
     global counter,random_time,speed_,total_time
-    
     while True:
         if clicking:
             mouse.click(Button.left, 1)
-            
-
         if human: 
             random_time = round(random.uniform(ranges[counter][0], ranges[counter][1]), 3)
             time.sleep(random_time)
