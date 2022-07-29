@@ -62,18 +62,16 @@ print(Fore.GREEN + '''
 
 def clicker():   
     global counter,random_time,speed_,total_time
-
     while True:
         if clicking:
             mouse.click(Button.left, 1)
-
         if human: 
             random_time = round(random.uniform(ranges[counter][0], ranges[counter][1]), 3)
             time.sleep(random_time)
             total_time = total_time + random_time
+
             if total_time >= 2:
                 counter = random.randint(0,(len(ranges)-1))
-
         elif manual:
             time.sleep(speed_)
         else:
@@ -123,7 +121,7 @@ def toggle_event(key):
             print(Fore.GREEN + 'Started Manual Mode\n')
         
             cps = int(input(Fore.WHITE + "Enter CPS: \n"))
-            speed_ = round(1/(cps+ cps*0.15),4)
+            speed_ = round(1/cps,4)
             print(Fore.WHITE + "\nStart clicker to proceed \n")
 
 click_thread = threading.Thread(target=clicker)
