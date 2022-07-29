@@ -121,7 +121,7 @@ def toggle_event(key):
             print(Fore.GREEN + 'Started Manual Mode\n')
         
             cps = int(input(Fore.WHITE + "Enter CPS: \n"))
-            speed_ = round(1/cps,4)
+            speed_ = round(1/(cps+ cps*0.15),4)
             print(Fore.WHITE + "\nStart clicker to proceed \n")
 
 click_thread = threading.Thread(target=clicker)
