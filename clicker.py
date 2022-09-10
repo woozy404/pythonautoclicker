@@ -54,9 +54,9 @@ counter = 0
 
 print(Fore.GREEN + '''
             ------------------------------------------------
-              To use the clicker press F on your keyboard
-              To use Humanized CPS use H on your keyboard
-             To enable Manual Mode press M on your keyboard
+              To use the clicker press [F] on your keyboard
+              To use Humanized CPS use [H] on your keyboard
+             To enable Manual Mode press [M] on your keyboard
             ------------------------------------------------
 ''')
 
