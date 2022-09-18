@@ -34,7 +34,6 @@ else:
 TOGGLE_KEY = KeyCode(char="f")
 HUMAN_KEY = KeyCode(char="h")
 MANUAL_KEY = KeyCode(char="m")
-INTERVAL_KEY = KeyCode(char="i")
 
 
 global human, clicking, manual, interval, speed_
